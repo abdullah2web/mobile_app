@@ -1,0 +1,71 @@
+/* Custom CSS */
+* {
+    margin: 0;
+}
+body {
+    font-family: Tahoma;
+}
+.header {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: ghostwhite;
+}
+.main {
+    padding: 50px 0;
+}
+.section {
+    padding: 10px;
+    border: 1px solid ghostwhite;
+}
+.pad {
+    padding: 10px;
+}
+.userimg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.text {
+    text-align: justify;
+}
+.date {
+    padding-top: 5px;
+    text-align: right;
+    color: gray;
+    font-size: small;
+}
+.center {
+    text-align: center;
+}
+.whatsapp {
+    text-decoration: none;
+    font-size:xx-large;
+    color: green;
+}
+.footer {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: ghostwhite;
+}
+.nav {
+    width: 24%;
+    display: inline-block;
+}
+.anchor {
+    text-decoration: none;
+    color: gray;
+}
+.small_size {
+    font-size: xx-small;
+}
+.active {
+    color: black;
+}
