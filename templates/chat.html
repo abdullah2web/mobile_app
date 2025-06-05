@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <header class="header">
+        <h1>Chat</h1>
+    </header>
+    <main class="main">
+        <section class="section">
+            <div class="pad center">
+                <a class="whatsapp" href="">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                </a>
+                <h4>+966000000000</h4>
+            </div>
+        </section>
+        <section class="section">
+            <h3 id="msg">Start Chat</h3>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="nav">
+            <a class="anchor" href="{{ url_for('home') }}">
+                <i class="fa-regular fa-paper-plane"></i>
+                <p class="small_size">Home</p>
+            </a>
+        </nav>
+        <nav class="nav">
+            <a class="anchor" href="{{ url_for('media') }}">
+                <i class="fa-regular fa-circle-play"></i>
+                <p class="small_size">Media</p>
+            </a>
+        </nav>
+        <nav class="nav">
+            <a class="anchor active" href="{{ url_for('chat') }}">
+                <i class="fa-solid fa-comment"></i>
+                <p class="small_size">Chat</p>
+            </a>
+        </nav>
+        <nav class="nav">
+            <a class="anchor" href="{{ url_for('file') }}">
+                <i class="fa-regular fa-user"></i>
+                <p class="small_size">File</p>
+            </a>
+        </nav>
+    </footer>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    
+{% endblock content %}

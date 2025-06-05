@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <header class="header">
+        <h1>Media</h1>
+    </header>
+    <main class="main">
+        <section class="section">
+            <div class="pad">
+                <img class="userimg" src="{{ url_for('static', filename='img/userimg.jpg') }}" alt="userimg">
+                <p>username</p>
+            </div>
+            <div class="pad">
+                <video src="" controls></video>
+                <p class="date">20/05/2025</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="nav">
+            <a class="anchor" href="{{ url_for('home') }}">
+                <i class="fa-regular fa-paper-plane"></i>
+                <p class="small_size">Home</p>
+            </a>
+        </nav>
+        <nav class="nav">
+            <a class="anchor active" href="{{ url_for('media') }}">
+                <i class="fa-solid fa-circle-play"></i>
+                <p class="small_size">Media</p>
+            </a>
+        </nav>
+        <nav class="nav">
+            <a class="anchor" href="{{ url_for('chat') }}">
+                <i class="fa-regular fa-comment"></i>
+                <p class="small_size">Chat</p>
+            </a>
+        </nav>
+        <nav class="nav">
+            <a class="anchor" href="{{ url_for('file') }}">
+                <i class="fa-regular fa-user"></i>
+                <p class="small_size">File</p>
+            </a>
+        </nav>
+    </footer>
+
+{% endblock content %}
